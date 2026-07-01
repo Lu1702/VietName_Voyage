@@ -21,3 +21,15 @@ h1{
 .fm-landing-page {
     background-image: src('https://lh3.googleusercontent.com/aida-public/AB6AXuCAtefUaDp8hGpWs4A8VENLqSZ4zZ3EKCutFG02YwDiBAl9gVCPmJECW4bs0tvX6O_ZSptQ-O_TJClq7Vsr1ByW102kStkVVEZDhSriiNOLQWotuYr-lvlwcf0bDzHC8twFZGdoycfRZOOq3eNYJUnR-3AqSZ161dYMLeZW59pl_enly6eoRd7UiSUHPf7vl6xrh0MdoCiJOgrGzMXRRw0I0sIbULEnqFcrVNuFNk0qQosJuqjNWcqUIr4aUAHhckw51UKvAQ0uyds')
 }
+.fm-header {
+    display:flex;
+    justify-content:center;
+    text-align:center;
+    background-color:aliceblue;
+    float:left;
+    width:100%;
+    justify-items:center;
+}
+.fm-navbar{
+    padding:10px;
+}
