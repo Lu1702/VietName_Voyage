@@ -1,0 +1,23 @@
+﻿body {
+    background:white;
+}
+a {
+    list-style-type:none;
+    padding:10px;
+    margin:10px;
+    text-decoration:none;
+    color: #4b3f3f;
+    font-weight:600;
+}
+.fm-menu-top{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    float:left
+}
+h1{
+    float:left;
+}
+.fm-landing-page {
+    background-image: src('https://lh3.googleusercontent.com/aida-public/AB6AXuCAtefUaDp8hGpWs4A8VENLqSZ4zZ3EKCutFG02YwDiBAl9gVCPmJECW4bs0tvX6O_ZSptQ-O_TJClq7Vsr1ByW102kStkVVEZDhSriiNOLQWotuYr-lvlwcf0bDzHC8twFZGdoycfRZOOq3eNYJUnR-3AqSZ161dYMLeZW59pl_enly6eoRd7UiSUHPf7vl6xrh0MdoCiJOgrGzMXRRw0I0sIbULEnqFcrVNuFNk0qQosJuqjNWcqUIr4aUAHhckw51UKvAQ0uyds')
+}

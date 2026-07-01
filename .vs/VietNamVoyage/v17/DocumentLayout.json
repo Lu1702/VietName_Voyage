@@ -1,0 +1,117 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C#\\VietNamVoyage\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{45DCD71E-2A12-459D-8315-CD4EC27A91DF}|VietNamVoyage\\VietNamVoyage.csproj|d:\\c#\\vietnamvoyage\\vietnamvoyage\\views\\home\\test.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45DCD71E-2A12-459D-8315-CD4EC27A91DF}|VietNamVoyage\\VietNamVoyage.csproj|solutionrelative:vietnamvoyage\\views\\home\\test.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45DCD71E-2A12-459D-8315-CD4EC27A91DF}|VietNamVoyage\\VietNamVoyage.csproj|D:\\C#\\VietNamVoyage\\vietnamvoyage\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45DCD71E-2A12-459D-8315-CD4EC27A91DF}|VietNamVoyage\\VietNamVoyage.csproj|solutionrelative:vietnamvoyage\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45DCD71E-2A12-459D-8315-CD4EC27A91DF}|VietNamVoyage\\VietNamVoyage.csproj|D:\\C#\\VietNamVoyage\\vietnamvoyage\\views\\home\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45DCD71E-2A12-459D-8315-CD4EC27A91DF}|VietNamVoyage\\VietNamVoyage.csproj|solutionrelative:vietnamvoyage\\views\\home\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45DCD71E-2A12-459D-8315-CD4EC27A91DF}|VietNamVoyage\\VietNamVoyage.csproj|D:\\C#\\VietNamVoyage\\vietnamvoyage\\views\\shared\\_layouthome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45DCD71E-2A12-459D-8315-CD4EC27A91DF}|VietNamVoyage\\VietNamVoyage.csproj|solutionrelative:vietnamvoyage\\views\\shared\\_layouthome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45DCD71E-2A12-459D-8315-CD4EC27A91DF}|VietNamVoyage\\VietNamVoyage.csproj|D:\\C#\\VietNamVoyage\\vietnamvoyage\\content\\mystyle\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{45DCD71E-2A12-459D-8315-CD4EC27A91DF}|VietNamVoyage\\VietNamVoyage.csproj|solutionrelative:vietnamvoyage\\content\\mystyle\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45DCD71E-2A12-459D-8315-CD4EC27A91DF}|VietNamVoyage\\VietNamVoyage.csproj|D:\\C#\\VietNamVoyage\\vietnamvoyage\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45DCD71E-2A12-459D-8315-CD4EC27A91DF}|VietNamVoyage\\VietNamVoyage.csproj|solutionrelative:vietnamvoyage\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Test.cshtml",
+              "DocumentMoniker": "D:\\C#\\VietNamVoyage\\VietNamVoyage\\Views\\Home\\Test.cshtml",
+              "RelativeDocumentMoniker": "VietNamVoyage\\Views\\Home\\Test.cshtml",
+              "ToolTip": "D:\\C#\\VietNamVoyage\\VietNamVoyage\\Views\\Home\\Test.cshtml",
+              "RelativeToolTip": "VietNamVoyage\\Views\\Home\\Test.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-18T14:15:08.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\C#\\VietNamVoyage\\VietNamVoyage\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "VietNamVoyage\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\C#\\VietNamVoyage\\VietNamVoyage\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "VietNamVoyage\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T14:14:42.032Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Home.cshtml",
+              "DocumentMoniker": "D:\\C#\\VietNamVoyage\\VietNamVoyage\\Views\\Home\\Home.cshtml",
+              "RelativeDocumentMoniker": "VietNamVoyage\\Views\\Home\\Home.cshtml",
+              "ToolTip": "D:\\C#\\VietNamVoyage\\VietNamVoyage\\Views\\Home\\Home.cshtml",
+              "RelativeToolTip": "VietNamVoyage\\Views\\Home\\Home.cshtml",
+              "ViewState": "AgIAAF0BAAAAAAAAAAAowHIBAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-18T14:13:29.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\C#\\VietNamVoyage\\VietNamVoyage\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "VietNamVoyage\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\C#\\VietNamVoyage\\VietNamVoyage\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "VietNamVoyage\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAiwAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-18T13:49:23.106Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Home.css",
+              "DocumentMoniker": "D:\\C#\\VietNamVoyage\\VietNamVoyage\\Content\\myStyle\\Home.css",
+              "RelativeDocumentMoniker": "VietNamVoyage\\Content\\myStyle\\Home.css",
+              "ToolTip": "D:\\C#\\VietNamVoyage\\VietNamVoyage\\Content\\myStyle\\Home.css",
+              "RelativeToolTip": "VietNamVoyage\\Content\\myStyle\\Home.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABcAQAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-06-18T13:42:56.183Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_LayoutHome.cshtml",
+              "DocumentMoniker": "D:\\C#\\VietNamVoyage\\VietNamVoyage\\Views\\Shared\\_LayoutHome.cshtml",
+              "RelativeDocumentMoniker": "VietNamVoyage\\Views\\Shared\\_LayoutHome.cshtml",
+              "ToolTip": "D:\\C#\\VietNamVoyage\\VietNamVoyage\\Views\\Shared\\_LayoutHome.cshtml",
+              "RelativeToolTip": "VietNamVoyage\\Views\\Shared\\_LayoutHome.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAowCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-18T13:35:36.4Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

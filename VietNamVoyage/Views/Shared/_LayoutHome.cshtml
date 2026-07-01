@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="VietNam Voyage - Vietnamese Visitors" />
+    <title>@ViewBag.Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="~/Content/myStyle/Home.css" rel="stylesheet" />
+</head>
+<body>
+    <div style="display:flex;justify-content:center;align-items:center;background-color:white;border-radius:10px">
+        <div style="float:left">
+            <h1 style="float:left">VietNam Voyage</h1>
+        </div>
+        <div class="fm-menu-top">
+            <nav>
+                <a href="Home">Home</a>
+                <a href="About">About</a>
+                <a href="Home">Contact</a>
+                <a href="Review">Review</a>
+            </nav>
+        </div>
+    </div>
+    <div class="fm-landing-page">
+        <div class="fm-landing-page-search">
+            <div>
+                <h2>Discover the Soul of Vietnam</h2>
+                <h4>Embark on a curated journey through breathtaking landscapes, vibrant culture, and unforgettable experiences.</h4>        
+            </div>
+        </div>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

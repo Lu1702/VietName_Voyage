@@ -1,0 +1,375 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vietnam Voyage</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #faf8f5;
+            color: #1a2b23;
+        }
+
+        h1, h2, h3, .brand-name {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* --- Header / Navbar --- */
+        .navbar {
+            background: transparent;
+            position: absolute;
+            width: 100%;
+            z-index: 10;
+            padding: 20px 0;
+        }
+
+        .nav-link {
+            color: #ffffff !important;
+            font-weight: 500;
+            margin: 0 15px;
+        }
+
+        .btn-book {
+            background-color: #112a20;
+            color: #ffffff;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        /* --- Hero Section --- */
+        .hero-section {
+            /* Thay link ảnh nền của bạn vào đây */
+            background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1528127269322-539801943592?q=80&w=2070') no-repeat center center;
+            background-size: cover;
+            height: 100vh;
+            min-height: 700px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 40px auto;
+            opacity: 0.9;
+        }
+
+        /* --- Search Bar --- */
+        .search-container {
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(10px);
+            padding: 12px;
+            border-radius: 16px;
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .search-inner {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 10px 20px;
+        }
+
+        .search-field {
+            border: none;
+            outline: none;
+            width: 100%;
+            padding: 5px;
+        }
+
+        .search-divider {
+            border-right: 1px solid #e0e0e0;
+            height: 40px;
+        }
+
+        .btn-journey {
+            background-color: #153227;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 24px;
+            font-weight: 600;
+            width: 100%;
+        }
+
+        /* --- Top Destinations Section --- */
+        .section-title-area {
+            padding: 80px 0 40px 0;
+        }
+
+        .view-all-link {
+            color: #153227;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* --- Cards Style --- */
+        .dest-card {
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            color: #ffffff;
+            height: 100%;
+        }
+
+            .dest-card img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.5s ease;
+            }
+
+            .dest-card:hover img {
+                transform: scale(1.05);
+            }
+
+        .card-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 30px;
+            background: linear-gradient(transparent, rgba(0,0,0,0.75));
+        }
+
+        .badge-category {
+            background-color: rgba(255,255,255,0.25);
+            backdrop-filter: blur(5px);
+            color: #ffffff;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            display: inline-block;
+            margin-bottom: 12px;
+        }
+
+        .dest-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+        }
+
+        .dest-card p {
+            font-size: 0.95rem;
+            opacity: 0.85;
+            margin-bottom: 0;
+            max-width: 85%;
+        }
+
+        .icon-circle {
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            background: #ffffff;
+            color: #153227;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Fixed heights for the grid layout */
+        .large-card {
+            height: 540px;
+        }
+
+        .small-card {
+            height: 255px;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background-color: #f3f0eb;
+            padding: 60px 0 30px 0;
+            margin-top: 100px;
+            font-size: 0.9rem;
+        }
+
+            footer h6 {
+                font-weight: 700;
+                text-transform: uppercase;
+                font-size: 0.8rem;
+                letter-spacing: 1px;
+                margin-bottom: 20px;
+            }
+
+            footer ul {
+                list-style: none;
+                padding-left: 0;
+            }
+
+                footer ul li {
+                    margin-bottom: 10px;
+                }
+
+                    footer ul li a {
+                        color: #555555;
+                        text-decoration: none;
+                    }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand text-white brand-name fs-3 fw-bold" href="#">VIETNAM VOYAGE</a>
+            <button class="navbar-collapse-trigger d-lg-none border-0 bg-transparent text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="bi bi-list fs-2"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Experiences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                </ul>
+            </div>
+            <div class="d-none d-lg-flex align-items-center">
+                <a href="#" class="text-white me-4 fs-5"><i class="bi bi-search"></i></a>
+                <button class="btn-book">Book Now</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-center text-white">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Discover the Soul of<br>Vietnam</h1>
+                <p>Embark on a curated journey through breathtaking landscapes, vibrant culture, and unforgettable experiences.</p>
+            </div>
+
+            <div class="search-container mt-4">
+                <form action="#" method="GET">
+                    <div class="search-inner row g-3 align-items-center m-0">
+                        <div class="col-md-5 d-flex align-items-center text-start">
+                            <i class="bi bi-geo-alt text-secondary me-2 fs-5"></i>
+                            <div class="w-100">
+                                <label class="text-muted small d-block p-0 m-0">Where to?</label>
+                                <input type="text" class="search-field" placeholder="Search destinations...">
+                            </div>
+                        </div>
+                        <div class="col-md-1 d-none d-md-block text-center">
+                            <div class="search-divider mx-auto"></div>
+                        </div>
+                        <div class="col-md-3 d-flex align-items-center text-start">
+                            <i class="bi bi-calendar4 text-secondary me-2 fs-5"></i>
+                            <div class="w-100">
+                                <label class="text-muted small d-block p-0 m-0">Dates</label>
+                                <input type="text" class="search-field" placeholder="Choose date range">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="button" class="btn-journey">Start Your Journey</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <div class="section-title-area d-flex justify-content-between align-items-end">
+            <div>
+                <h2 class="fs-1 fw-bold mb-2">Top Destinations</h2>
+                <p class="text-muted m-0">Explore our handpicked locations, from the emerald waters of iconic bays to the misty highland retreats.</p>
+            </div>
+            <a href="#" class="view-all-link">View All Destinations <i class="bi bi-arrow-right ms-1"></i></a>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-8 col-md-12">
+                <div class="dest-card large-card">
+                    <img src="https://images.unsplash.com/photo-1557053964-937650b63311?q=80&w=2000" alt="Ha Long Bay">
+                    <div class="card-overlay">
+                        <span class="badge-category">Natural Wonder</span>
+                        <h3>Ha Long Bay</h3>
+                        <p class="d-none d-sm-block">Sail through thousands of limestone islands in emerald waters, a mesmerizing UNESCO World Heritage site.</p>
+                    </div>
+                    <div class="icon-circle d-none d-sm-flex">
+                        <i class="bi bi-compass-fill fs-5"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 d-flex flex-column justify-content-between gap-4">
+
+                <div class="dest-card small-card">
+                    <img src="https://images.unsplash.com/photo-1559592413-7ce4f0a048ac?q=80&w=800" alt="Hoi An">
+                    <div class="card-overlay">
+                        <span class="badge-category">Heritage City</span>
+                        <h3>Hoi An</h3>
+                    </div>
+                </div>
+
+                <div class="dest-card small-card">
+                    <img src="https://images.unsplash.com/photo-1596414777592-3ab764fba227?q=80&w=800" alt="Da Lat">
+                    <div class="card-overlay">
+                        <span class="badge-category">Highland Retreat</span>
+                        <h3>Da Lat</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="brand-name fw-bold mb-3">VIETNAM VOYAGE</h5>
+                    <p class="text-muted small">© 2024 Vietnam Voyage. All rights reserved.<br>Crafted for the modern explorer.</p>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h6>Explore</h6>
+                    <ul>
+                        <li><a href="#">Destinations</a></li>
+                        <li><a href="#">Experiences</a></li>
+                        <li><a href="#">Travel Guides</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h6>Company</h6>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12 text-md-start text-lg-end">
+                    <h6>Connect</h6>
+                    <div class="fs-4">
+                        <a href="#" class="text-secondary me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-secondary"><i class="bi bi-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
