@@ -1,7 +1,138 @@
-﻿
-@{
-    ViewBag.Title = "Home";
-    Layout = "~/Views/Shared/_LayoutHome.cshtml";
+﻿@{
+    ViewData["Title"] = "Vietnam Voyage - Discover the Soul of Vietnam";
+    Layout = null;
 }
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link href="~/Content/myStyle/custom-voyage.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
 
+    <header class="voyage-header">
+        <div class="header-container">
+            <div class="brand-logo">VIETNAM VOYAGE</div>
+            <nav class="main-nav">
+                <a href="#" class="nav-link">Destinations</a>
+                <a href="#" class="nav-link">Experiences</a>
+                <a href="#" class="nav-link">About</a>
+            </nav>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+
+            <div class="header-actions" id="navbar-menu">
+                <form action="/Home/Search" method="GET" class="search-input-group">
+                    <input type="text" name="destination" placeholder="Where to?" class="voyage-input">
+                    <button type="submit" class="btn-searching-navbar">Searching</button>
+                </form>
+                <button class="primary-btn book-btn">Book Now</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Discover the Soul of<br>Vietnam</h1>
+            <p class="hero-subtitle">Embark on a curated journey through breathtaking landscapes, vibrant<br>culture, and unforgettable experiences.</p>
+
+            <div class="search-booking-bar">
+                <div class="search-input-group">
+                    <span class="input-icon">📍</span>
+                    <input type="text" placeholder="Where to?" class="voyage-input">
+                </div>
+                <div class="search-divider"></div>
+                <div class="search-input-group">
+                    <input type="date" class="voyage-input">
+                </div>
+                <button class="submit-search-btn">Start Your Journey</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="destinations-section">
+        <div class="section-header">
+            <div class="section-title-wrapper">
+                <h2 class="section-title">Top Destinations</h2>
+                <p class="section-desc">Explore our handpicked locations, from the emerald waters of iconic bays to<br>the misty highland retreats.</p>
+            </div>
+            <a href="#" class="view-all-link">View All Destinations &rarr;</a>
+        </div>
+
+        <div class="destinations-grid">
+            <div class="dest-card large-card">
+                <img src="https://images.unsplash.com/photo-1528127269322-539801943592?q=80&w=1000&auto=format&fit=crop" alt="Ha Long Bay" class="card-img">
+                <div class="card-gradient"></div>
+                <div class="card-info">
+                    <span class="tag">Natural Wonder</span>
+                    <h3 class="card-title">Ha Long Bay</h3>
+                    <p class="card-desc">Sail through thousands of limestone islands in emerald waters, a mesmerizing UNESCO World Heritage site.</p>
+                </div>
+                <div class="compass-icon">🧭</div>
+            </div>
+
+            <div class="right-column-grid">
+                <div class="dest-card small-card">
+                    <img src="https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?q=80&w=1000&auto=format&fit=crop" alt="Hoi An" class="card-img">
+                    <div class="card-gradient"></div>
+                    <div class="card-info">
+                        <span class="tag">Heritage City</span>
+                        <h3 class="card-title">Hoi An</h3>
+                    </div>
+                </div>
+                <div class="dest-card small-card">
+                    <img src="https://images.unsplash.com/photo-1583417319070-4a69db38a482?q=80&w=1000&auto=format&fit=crop" alt="Da Lat" class="card-img">
+                    <div class="card-gradient"></div>
+                    <div class="card-info">
+                        <span class="tag">Highland Retreat</span>
+                        <h3 class="card-title">Da Lat</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="voyage-footer">
+        <div class="footer-container">
+            <div class="footer-brand-col">
+                <h3 class="footer-logo">VIETNAM VOYAGE</h3>
+                <p class="copyright">&copy; 2026 Vietnam Voyage. All rights<br>reserved. Crafted for the modern<br>explorer.</p>
+            </div>
+            <div class="footer-links-col">
+                <h4 class="footer-heading">EXPLORE</h4>
+                <ul class="footer-list">
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Experiences</a></li>
+                    <li><a href="#">Travel Guides</a></li>
+                </ul>
+            </div>
+            <div class="footer-links-col">
+                <h4 class="footer-heading">COMPANY</h4>
+                <ul class="footer-list">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-social-col">
+                <h4 class="footer-heading">CONNECT</h4>
+                <div class="social-icons">
+                    <a href="#" class="social-link">📷</a>
+                    <a href="#" class="social-link">🌐</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("navbar-menu");
+            menu.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
