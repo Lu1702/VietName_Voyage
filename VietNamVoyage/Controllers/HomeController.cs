@@ -19,7 +19,12 @@ namespace VietNamVoyage.Controllers
 
             return View();
         }
+        public ActionResult Destinations()
+        {
+            ViewBag.Message = "Your destinations page.";
 
+            return View();
+        }
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
