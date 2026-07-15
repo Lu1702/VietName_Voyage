@@ -1,0 +1,215 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link href="~/Content/myStyle/custom-voyage.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        h1,
+        h2 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .card {
+            position: relative;
+            width: 900px; /* hoặc 80%, 1000px... */
+            height: 350px;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+         .card img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+         }
+        .content p {
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            white-space: normal;
+            font-size:18px;
+        }
+        h2 {
+            font-size: 48px;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+        }
+        .overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient( transparent, rgba(0,0,0,0.7) );
+        }
+
+        .content {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            color: white;
+        }
+            .content p {
+                width: 60%;
+            }
+        .destinations-section {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+        .btn-discover {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            background: transparent;
+            color: white;
+            border: 1px solid white;
+            border-radius: 20px;
+            padding: 8px 18px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+            .btn-discover:hover {
+                background: white;
+                color: black;
+                transform: translateY(-3px);
+            }
+
+    </style>
+</head>
+<body>
+    <header class="voyage-header">
+        <div class="header-container">
+            <div class="brand-logo">VIETNAM VOYAGE</div>
+            <nav class="main-nav">
+                <a href="~/home/destinations" class="nav-link">Destinations</a>
+                <a href="#" class="nav-link">Experiences</a>
+                <a href="#" class="nav-link">About</a>
+            </nav>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+
+            <div class="header-actions" id="navbar-menu">
+                <form action="/Home/Search" method="GET" class="search-input-group">
+                    <input type="text" name="destination" placeholder="Where to?" class="voyage-input">
+                    <button type="submit" class="btn-searching-navbar">Searching</button>
+                </form>
+                <button class="primary-btn book-btn">Book Now</button>
+            </div>
+        </div>
+    </header>
+
+    <div>
+        <h1>Explore VIETNAM</h1>
+        <h4> takdjnaknjddddddddddddddd</h4>
+    </div>
+
+    <section class="destinations-section">
+
+        <div class="card">
+            <img class="card-img" src="~/img/hoasenjpg.jpg" />
+            <div class="overlay"></div>
+
+            <div class="content">
+                <h2>Đồng Tháp Province</h2>
+                <p> Đây là mô tả thành phố</p>
+                <button class="btn-discover">Discover More</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-img" src="~/img/hochiminh.jpg" />
+            <div class="overlay"></div>
+
+            <div class="content">
+                <h2>Thành Phố Hồ Chí Minh</h2>
+                <p>Thành phố năng động bậc nhất Việt Nam, nơi giao thoa giữa văn hóa hiện đại, lịch sử và nhịp sống sôi động.</p>
+                <button class="btn-discover">Discover More</button>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img" src="~/img/dalat2.jpg" />
+            <div class="overlay"></div>
+
+            <div class="content">
+                <h2>Đà Lạt</h2>
+                <p> Thành phố ngàn hoa nổi tiếng với khí hậu mát mẻ, cảnh sắc lãng mạn và những góc check-in tuyệt đẹp.</p>
+                <button class="btn-discover">Discover More</button>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img" src="~/img/nhatrang.jpg" />
+            <div class="overlay"></div>
+
+            <div class="content">
+                <h2>Nha Trang</h2>
+                <p> Thành phố biển xinh đẹp với bãi cát trắng, làn nước trong xanh và những trải nghiệm nghỉ dưỡng tuyệt vời.   </p>
+                <button class="btn-discover">Discover More</button>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img" src="~/img/vungtau.jpg" />
+            <div class="overlay"></div>
+
+            <div class="content">
+                <h2>Vũng Tàu</h2>
+                <p> Điểm đến biển gần gũi với những bãi biển thơ mộng, hải sản tươi ngon và không khí thư giãn.</p>
+                <button class="btn-discover">Discover More</button>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img" src="~/img/hanoi.jpg" />
+            <div class="overlay"></div>
+
+            <div class="content">
+                <h2>Hà Nội</h2>
+                <p>Thủ đô nghìn năm văn hiến với nét đẹp cổ kính, những di tích lịch sử và nền ẩm thực đặc sắc. </p>
+                <button class="btn-discover">Discover More</button>
+            </div>
+        </div>
+
+    </section>
+
+
+    <footer class="voyage-footer">
+        <div class="footer-container">
+            <div class="footer-brand-col">
+                <h3 class="footer-logo">VIETNAM VOYAGE</h3>
+                <p class="copyright">&copy; 2026 Vietnam Voyage. All rights<br>reserved. Crafted for the modern<br>explorer.</p>
+            </div>
+            <div class="footer-links-col">
+                <h4 class="footer-heading">EXPLORE</h4>
+                <ul class="footer-list">
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Experiences</a></li>
+                    <li><a href="#">Travel Guides</a></li>
+                </ul>
+            </div>
+            <div class="footer-links-col">
+                <h4 class="footer-heading">COMPANY</h4>
+                <ul class="footer-list">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-social-col">
+                <h4 class="footer-heading">CONNECT</h4>
+                <div class="social-icons">
+                    <a href="#" class="social-link">📷</a>
+                    <a href="#" class="social-link">🌐</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
