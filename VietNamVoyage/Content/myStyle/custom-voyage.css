@@ -526,3 +526,135 @@ a {
         transform: translateY(0);
     }
 }
+
+.login-page-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(rgba(18, 44, 35, 0.85), rgba(18, 44, 35, 0.9)), url('https://res.cloudinary.com/du42rq1ki/image/upload/v1782913707/hinh-anh-ruong-bac-thang-20_pxgklw.jpg') center/cover no-repeat;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+}
+
+.login-card {
+    background-color: var(--bg-light);
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-logo {
+    color: var(--primary-dark);
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    display: block;
+}
+
+.login-title {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    color: var(--primary-dark);
+    margin-bottom: 10px;
+}
+
+.login-subtitle {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.login-form .input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--primary-dark);
+    font-size: 0.9rem;
+}
+
+.login-form .form-control {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 12px 15px;
+    border-radius: 6px;
+    transition: border-color var(--trans-speed);
+    color: var(--text-main);
+}
+
+    .login-form .form-control:focus {
+        border-color: var(--primary-dark);
+    }
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 0.9rem;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #555;
+    cursor: pointer;
+}
+
+.forgot-password {
+    color: var(--primary-dark);
+    font-weight: 600;
+}
+
+    .forgot-password:hover, .signup-link:hover {
+        text-decoration: underline;
+    }
+
+.login-submit-btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+    border-radius: 6px;
+}
+
+.login-footer {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.signup-link {
+    color: var(--primary-dark);
+    font-weight: 600;
+}
+
+.back-home-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #888;
+    transition: color var(--trans-speed);
+}
+
+    .back-home-link:hover {
+        color: var(--primary-dark);
+    }
+
+@media (max-width: 480px) {
+    .login-card {
+        padding: 30px 20px;
+    }
+}

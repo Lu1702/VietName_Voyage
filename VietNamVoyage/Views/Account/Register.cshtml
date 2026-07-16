@@ -1,0 +1,53 @@
+﻿@{
+    ViewData["Title"] = "Register - Vietnam Voyage";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link href="~/Content/myStyle/custom-voyage.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="login-page-body">
+
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <h1 class="brand-logo login-logo">VIETNAM VOYAGE</h1>
+                <h2 class="login-title">Create an Account</h2>
+                <p class="login-subtitle">Join us to start planning your perfect journey.</p>
+            </div>
+
+            <form action="/Account/Register" method="POST" class="login-form">
+
+                <div class="input-group">
+                    <label for="Username" class="input-label">Full Name</label>
+                    <input type="text" id="Username" name="Username" class="voyage-input form-control" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="Password" class="input-label">Password</label>
+                    <input type="password" id="Password" name="Password" class="voyage-input form-control" placeholder="Create a password" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="ConfirmPassword" class="input-label">Confirm Password</label>
+                    <input type="password" id="ConfirmPassword" name="ConfirmPassword" class="voyage-input form-control" placeholder="Repeat your password" required>
+                </div>
+
+                <button type="submit" class="primary-btn login-submit-btn" style="margin-top: 10px;">Sign Up</button>
+            </form>
+
+            <div class="login-footer">
+                <p>Already have an account? <a href="/Account/Login" class="signup-link">Sign in</a></p>
+                <a href="/Home/Index" class="back-home-link">&larr; Back to Home</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
