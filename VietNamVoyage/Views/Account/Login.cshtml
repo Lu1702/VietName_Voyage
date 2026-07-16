@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "Login - Vietnam Voyage";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link href="~/Content/myStyle/custom-voyage.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="login-page-body">
+
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <h1 class="brand-logo login-logo">VIETNAM VOYAGE</h1>
+                <h2 class="login-title">Welcome Back</h2>
+                <p class="login-subtitle">Please enter your details to sign in.</p>
+            </div>
+
+            <form action="/Account/Login" method="POST" class="login-form">
+                <div class="input-group">
+                    <label for="Username" class="input-label">Username</label>
+                    <input type="text" id="Username" name="Username" class="voyage-input form-control" placeholder="Enter your username" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="Password" class="input-label">Password</label>
+                    <input type="password" id="Password" name="Password" class="voyage-input form-control" placeholder="••••••••" required>
+                </div>
+
+                <div class="form-actions">
+                    <label class="remember-me">
+                        <input type="checkbox" name="RememberMe" value="true">
+                        <span>Remember me</span>
+                    </label>
+                </div>
+
+                <button type="submit" class="primary-btn login-submit-btn">Sign In</button>
+            </form>
+
+            <div class="login-footer">
+                <p>Don't have an account? <a href="/Account/Register" class="signup-link">Sign up</a></p>
+                <a href="/Home/Index" class="back-home-link">&larr; Back to Home</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

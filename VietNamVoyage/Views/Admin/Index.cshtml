@@ -1,0 +1,52 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link href="~/Content/myStyle/custom-voyage.css" rel="stylesheet" />
+    <style>
+        .admin-dashboard {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .admin-menu {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .admin-card {
+            padding: 30px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            width: 200px;
+            text-decoration: none;
+            color: #122c23;
+            font-weight: bold;
+        }
+
+            .admin-card:hover {
+                transform: translateY(-5px);
+                transition: 0.3s;
+                background: #fbf9f4;
+            }
+    </style>
+</head>
+<body style="background: #f4f4f4;">
+    <div class="admin-dashboard">
+        <h2>Xin chào Admin: @Session["Username"]</h2>
+        <p>Chọn chức năng quản lý bên dưới:</p>
+
+        <div class="admin-menu">
+            <a href="/Users/Index" class="admin-card">Quản lý Users</a>
+            <a href="/Destinations/Index" class="admin-card">Quản lý Destinations</a>
+            <a href="/Account/Logout" class="admin-card" style="background: #ffebee; color: #c62828;">Đăng xuất</a>
+        </div>
+    </div>
+</body>
+</html>
