@@ -1,0 +1,507 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vietnam Voyage</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #faf8f5;
+            color: #1a2b23;
+        }
+
+        h1, h2, h3, .ten-thuong-hieu {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* THANH MENU */
+        .thanh-menu {
+            background-color: #1a2b23; /* Màu nền đen/xanh đen cho thanh menu */
+            width: 100%;
+            z-index: 10;
+            padding: 15px 0;
+        }
+
+        .lien-ket-menu {
+            color: #ffffff !important;
+            font-weight: 500;
+            margin: 0 15px;
+        }
+
+        .nut-dat-phong {
+            background-color: #112a20;
+            color: #ffffff;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        /* HERO */
+        .khu-vuc-anh-nen {
+            position: relative;
+            height: 480px;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../../hinhanh/cac_dia_diem_du_lich_noi_tieng_o_quang_nam_thu_hut_khach_du_lich_quanh_nam_1647252610.jpg') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding-bottom: 60px;
+        }
+
+        .chu-tren-anh {
+            text-align: center;
+            color: white;
+        }
+
+            .chu-tren-anh h1 {
+                font-family: 'Playfair Display', serif;
+                font-size: 52px;
+                font-weight: 700;
+                margin-bottom: 12px;
+            }
+
+            .chu-tren-anh p {
+                font-size: 15px;
+                max-width: 500px;
+                line-height: 1.7;
+                color: #e0e0e0;
+            }
+
+        /* BỐ CỤC 2 CỘT */
+        .bo-cuc-chinh {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+            display: flex;
+            gap: 50px;
+        }
+
+        .cot-noi-dung {
+            flex: 1;
+        }
+
+            .cot-noi-dung h2 {
+                font-family: 'Playfair Display', serif;
+                font-size: 24px;
+                font-weight: 700;
+                color: #1a2b23;
+                margin-bottom: 14px;
+            }
+
+            .cot-noi-dung p {
+                font-size: 14px;
+                color: #555;
+                line-height: 1.8;
+            }
+
+        .duong-ke-ngang {
+            border: none;
+            border-top: 1px solid #e0e0e0;
+            margin: 32px 0;
+        }
+
+        /* LỊCH TRÌNH */
+        .muc-lich-trinh {
+            display: flex;
+            gap: 18px;
+            margin-bottom: 28px;
+        }
+
+        .so-thu-tu {
+            background-color: #1a2b23;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            font-weight: bold;
+            flex-shrink: 0;
+            margin-top: 3px;
+        }
+
+        .muc-lich-trinh h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a2b23;
+            margin-bottom: 8px;
+        }
+
+        .muc-lich-trinh p {
+            font-size: 13px;
+            color: #666;
+            line-height: 1.7;
+            margin-bottom: 12px;
+        }
+
+        .muc-lich-trinh img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* ẨM THỰC */
+        .luoi-am-thuc {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .the-mon-an {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+            .the-mon-an img {
+                width: 100%;
+                height: 170px;
+                object-fit: cover;
+                display: block;
+            }
+
+        .ten-mon-an {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.65));
+            color: white;
+            padding: 24px 12px 10px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        /* CHỖ Ở */
+        .the-khach-san {
+            display: flex;
+            gap: 16px;
+            padding: 16px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+            .the-khach-san img {
+                width: 110px;
+                height: 85px;
+                object-fit: cover;
+                border-radius: 6px;
+                flex-shrink: 0;
+            }
+
+        .thong-tin-khach-san h4 {
+            font-size: 15px;
+            font-weight: 600;
+            color: #1a2b23;
+            margin-bottom: 5px;
+        }
+
+        .thong-tin-khach-san p {
+            font-size: 13px;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 6px;
+        }
+
+        .thong-tin-khach-san a {
+            font-size: 13px;
+            color: #1a2b23;
+            text-decoration: underline;
+        }
+
+        .nhan-loai-khach-san {
+            display: inline-block;
+            background: #1a2b23;
+            color: white;
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-bottom: 6px;
+        }
+
+        /* THANH BÊN */
+        .cot-thanh-ben {
+            width: 270px;
+            flex-shrink: 0;
+        }
+
+        .the-dat-lich {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 22px;
+            position: sticky;
+            top: 20px;
+        }
+
+            .the-dat-lich h3 {
+                font-family: 'Playfair Display', serif;
+                font-size: 18px;
+                font-weight: 700;
+                color: #1a2b23;
+                margin-bottom: 6px;
+            }
+
+            .the-dat-lich label {
+                display: block;
+                font-size: 12px;
+                color: #999;
+                margin-top: 14px;
+                margin-bottom: 5px;
+            }
+
+            .the-dat-lich input,
+            .the-dat-lich select {
+                width: 100%;
+                padding: 9px 10px;
+                border: 1px solid #ccc;
+                border-radius: 6px;
+                font-size: 13px;
+            }
+
+        .phan-gia {
+            margin-top: 18px;
+            font-size: 13px;
+            color: #999;
+        }
+
+            .phan-gia span {
+                display: block;
+                font-size: 28px;
+                font-weight: 700;
+                color: #1a2b23;
+            }
+
+        .nut-yeu-cau {
+            display: block;
+            width: 100%;
+            margin-top: 14px;
+            padding: 12px;
+            background-color: #1a2b23;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+            .nut-yeu-cau:hover {
+                background-color: #2d4a38;
+            }
+
+        .phan-lien-he {
+            margin-top: 14px;
+            text-align: center;
+            font-size: 12px;
+            color: #aaa;
+            line-height: 1.7;
+        }
+
+            .phan-lien-he a {
+                color: #1a2b23;
+                text-decoration: underline;
+            }
+
+        /* FOOTER */
+        footer {
+            background-color: #f3f0eb;
+            padding: 60px 0 30px 0;
+            margin-top: 100px;
+            font-size: 0.9rem;
+        }
+
+            footer h6 {
+                font-weight: 700;
+                text-transform: uppercase;
+                font-size: 0.8rem;
+                letter-spacing: 1px;
+                margin-bottom: 20px;
+            }
+
+            footer ul {
+                list-style: none;
+                padding-left: 0;
+            }
+
+                footer ul li {
+                    margin-bottom: 10px;
+                }
+
+                    footer ul li a {
+                        color: #555555;
+                        text-decoration: none;
+                    }
+    </style>
+</head>
+<body>
+    <!-- ẢNH NỀN HERO -->
+    <div class="khu-vuc-anh-nen">
+        <div class="chu-tren-anh">
+            <h1>Quảng Nam</h1>
+            <p>
+                Đắm chìm trong vẻ đẹp lung linh của những con phố lồng đèn tại đô thị cổ Hội An
+                và thả hồn theo nhịp sống thanh bình bên dải bờ biển miền Trung thơ mộng.
+            </p>
+        </div>
+    </div>
+
+    <!-- NỘI DUNG CHÍNH -->
+    <div class="bo-cuc-chinh">
+
+        <!-- CỘT NỘI DUNG -->
+        <div class="cot-noi-dung">
+
+            <h2>Nhịp Đập Di Sản</h2>
+            <p>
+                Quảng Nam được ví như một "bảo tàng sống" tuyệt đẹp, nơi những thương cảng sầm uất thủa nào vẫn thầm thì kể lại câu chuyện của hàng thế kỷ trước. 
+                Nhịp đập của vùng đất này thuộc về Hội An – đô thị cổ làm say lòng lữ khách bởi những dãy nhà thương nhân nhuốm màu vàng hoài cổ, 
+                những hội quán trầm mặc và hình ảnh Chùa Cầu biểu tượng vắt ngang dòng thời gian.
+            </p>
+
+            <hr class="duong-ke-ngang" />
+
+            <h2>Lịch Trình Trải Nghiệm</h2>
+
+            <div class="muc-lich-trinh">
+                <div class="so-thu-tu">1</div>
+                <div>
+                    <h3>Chạm Ngõ Phố Cổ Hội An</h3>
+                    <p>
+                        Thả mình thư giãn tại không gian lưu trú xinh xắn trước khi rảo bước khám phá Đô thị cổ lừng danh được UNESCO vinh danh. 
+                        Khi hoàng hôn buông lơi, đừng bỏ lỡ cơ hội tự tay làm nên những chiếc lồng đèn truyền thống rực rỡ rọi sáng cả góc phố.
+                    </p>
+                    <img src="~/HinhAnh/images.jpg" alt="Hoi An Ancient Town"/>
+                </div>
+            </div>
+
+            <div class="muc-lich-trinh">
+                <div class="so-thu-tu">2</div>
+                <div>
+                    <h3>Thanh Âm Đồng Quê & Biển Xanh An Bàng</h3>
+                    <p>
+                        Đạp xe rong ruổi qua Làng rau Trà Quế khi những tia nắng ban mai vừa hé rạng. 
+                        Sau trải nghiệm hóa thân thành người nông dân đích thực đầy thú vị, 
+                        hãy tìm về bờ cát trắng mịn của biển An Bàng để buông bỏ muộn phiền, 
+                        đắm mình trong hơi thở dạt dào của đại dương.
+                    </p>
+                </div>
+            </div>
+
+            <hr class="duong-ke-ngang" />
+
+            <h2>Phong Vị Xứ Quảng</h2>
+
+            <div class="luoi-am-thuc">
+                <div class="the-mon-an">
+                    <img src="~/HinhAnh/mi-quang-ivivu-9.jpg" alt="Mi Quang"/>   
+                    <div class="ten-mon-an">Mì Quảng</div>
+                </div>
+                <div class="the-mon-an">
+                    <img src="~/HinhAnh/dia-chi-com-ga-tam-ky-04-1703247102.jpg" alt="Com Ga Tam Ky"/>
+                    <div class="ten-mon-an">Cơm Gà Tam Ky (Tam Ky Chicken Rice)</div>
+                </div>
+            </div>
+
+            <hr class="duong-ke-ngang" />
+
+            <h2>Nơi Dừng Chân</h2>
+
+            <div class="the-khach-san">
+                <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=300"
+                     alt="Anantara Hoi An" />
+                <div class="thong-tin-khach-san">
+                    <span class="nhan-loai-khach-san">Khu Nghỉ Dưỡng Di Sản</span>
+                    <h4>Anantara Hoi An Resort</h4>
+                    <p>
+                        Một chốn nương náu duyên dáng và nên thơ ven sông, nơi giao thoa hoàn mỹ giữa nét tinh hoa kiến trúc Hà Lan, Trung Hoa và Nhật Bản, nằm e ấp chỉ cách khu phố cổ vài sải bước chân.
+                        <br/>
+                    <a href="#">View Details →</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- THANH BÊN -->
+        <div class="cot-thanh-ben">
+            <div class="the-dat-lich">
+                <h3>Plan Your Journey</h3>
+
+                <label>Ngày khởi hành</label>
+                <input type="date" id="ngayDi" />
+
+                <label>Số lượng khách</label>
+                <select id="soNguoi">
+                    <option>1 Người lớn</option>
+                    <option selected>2 Người lớn, 1 Phòng</option>
+                    <option>2 Người lớn, 2 Trẻ em</option>
+                    <option>Nhóm (Từ 5 người)</option>
+                </select>
+
+                <div class="phan-gia">
+                    Mức giá chỉ từ
+                    <span>$450</span>
+                </div>
+
+                <button class="nut-yeu-cau">Nhận Lịch Trình Riêng</button>
+
+                <div class="phan-lien-he">
+                    Bạn cần hỗ trợ thêm thông tin? <br />
+                    <a href="#">Liên hệ Chuyên viên Tư vấn</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="ten-thuong-hieu fw-bold mb-3">VIETNAM VOYAGE</h5>
+                    <p class="text-muted small">
+                        Crafted for the modern explorer.<br>
+                        Discover the soul of Vietnam through curated experiences.
+                    </p>
+                    <p class="text-muted small">© 2024 Vietnam Voyage. All rights reserved.</p>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h6>Explore</h6>
+                    <ul>
+                        <li><a href="#">Destinations</a></li>
+                        <li><a href="#">Experiences</a></li>
+                        <li><a href="#">Travel Guides</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h6>Company</h6>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <h6>Subscribe for Inspiration</h6>
+                    <input type="email" placeholder="Email address"
+                           style="width:100%; padding:9px; border:1px solid #ccc; border-radius:6px; font-size:13px;" />
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
