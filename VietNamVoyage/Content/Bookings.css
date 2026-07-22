@@ -1,0 +1,124 @@
+.booking-page {
+    font-family: Arial, "Segoe UI", sans-serif;
+    max-width: 900px;
+    margin: 35px auto;
+    padding: 0 16px;
+}
+
+.booking-card {
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin-top: 100px;
+    padding: 70px;
+    box-shadow: 0 4px 14px lightgray;
+}
+
+.booking-heading {
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+}
+
+    .booking-heading h1 {
+        color: darkcyan;
+        font-size: 28px;
+        margin: 4px 0 8px;
+    }
+
+    .booking-heading p {
+        color: gray;
+        margin: 0;
+    }
+
+.booking-kicker {
+    color: chocolate !important;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.booking-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.booking-field {
+    display: flex;
+    flex-direction: column;
+}
+
+    .booking-field label {
+        color: black;
+        font-weight: 600;
+        margin-bottom: 7px;
+    }
+
+.booking-input {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    box-sizing: border-box;
+    max-width: none;
+    padding: 10px 12px;
+    width: 100%;
+}
+
+    .booking-input:focus {
+        border-color: darkcyan;
+        box-shadow: 0 0 0 2px lightblue;
+        outline: none;
+    }
+
+.booking-note {
+    margin-top: 18px;
+}
+
+.booking-status {
+    color: gray;
+    font-size: 14px;
+    margin: 18px 0;
+}
+
+    .booking-status strong {
+        color: darkorange;
+    }
+
+.booking-submit {
+    background: darkcyan;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 11px 20px;
+}
+
+    .booking-submit:hover {
+        background: teal;
+    }
+
+.booking-alert {
+    background: honeydew;
+    border: 1px solid lightgreen;
+    border-radius: 5px;
+    color: green;
+    margin-bottom: 20px;
+    padding: 12px;
+}
+
+.booking-error, .booking-validation {
+    color: red;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+    .booking-card {
+        padding: 22px 18px;
+    }
+
+    .booking-grid {
+        grid-template-columns: 1fr;
+    }
+}

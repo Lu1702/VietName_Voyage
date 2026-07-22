@@ -11,6 +11,7 @@
         <EntityTypeShape EntityType="TravelDBModel.User" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
         <AssociationConnector Association="TravelDBModel.FK_Reviews_Destinations" ManuallyRouted="false" />
         <AssociationConnector Association="TravelDBModel.FK_Reviews_Users" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="TravelDBModel.Booking" Width="1.5" PointX="5.875" PointY="2.125" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

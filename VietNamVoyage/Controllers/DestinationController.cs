@@ -15,6 +15,5 @@ namespace VietNamVoyage.Controllers
             var list = db.Destinations.ToList();
             return View(list);
         }
-
     }
 }

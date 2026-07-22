@@ -1,0 +1,102 @@
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đặt tour - Vietnam Voyage</title>
+    <link href="~/Content/myStyle/custom-voyage.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="~/Content/Bookings.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="voyage-header">
+        <div class="header-container">
+            <div class="brand-logo"><a href="~/Home" class="nav-link">VIETNAM VOYAGE</a></div>
+            <nav class="main-nav">
+                <a href="~/Destination/Destinations" class="nav-link">Destinations</a>
+                <a href="#" class="nav-link">Experiences</a>
+                <a href="#" class="nav-link">About</a>
+            </nav>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+
+            <div class="header-actions" id="navbar-menu">
+                <form action="/Home/Search" method="get" class="search-input-group">
+                    <input type="text" name="destination" placeholder="Where to?" class="voyage-input" />
+                    <button type="submit" class="btn-searching-navbar">Searching</button>
+                </form>
+                <a href="~/Bookings/Create" class="primary-btn book-btn">Book Now</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="booking-page">
+        <div class="booking-card">
+            <div class="booking-heading">
+                <p class="booking-kicker">VIETNAM VOYAGE</p>
+                <h1>Đặt tour</h1>
+                <p>Điền thông tin bên dưới để gửi yêu cầu đặt tour.</p>
+            </div>
+
+            <form class="booking-form" method="post" action="/Bookings/Create">
+                <div class="booking-grid">
+                    <div class="booking-field">
+                        <label for="idDestination">Điểm đến</label>
+                        <select id="idDestination" name="idDestination" class="booking-input">
+                            <option value="">-- Chọn điểm đến --</option>
+                            @foreach (var destination in ViewBag.Destinations)
+                            {
+                                <option value="@destination.IdDestination">
+                                    @destination.NameDestination
+                                </option>
+                            }
+                        </select>
+                    </div>
+                    <div class="booking-field">
+                        <label for="fullName">Họ và tên</label>
+                        <input id="fullName" name="fullName" class="booking-input" type="text" placeholder="Nguyễn Văn An" />
+
+                    </div>
+                    <div class="booking-field">
+                        <label for="phone">Số điện thoại</label>
+                        <input id="phone" name="phone" class="booking-input" type="tel" placeholder="0912345678" />
+                    </div>
+                    <div class="booking-field">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" class="booking-input" type="email" placeholder="email@example.com" />
+                    </div>
+                    <div class="booking-field">
+                        <label for="departureDate">Ngày khởi hành</label>
+                        <input id="departureDate" name="departureDate" class="booking-input" type="date" />
+                    </div>
+                    <div class="booking-field">
+                        <label for="numberOfPeople">Số người</label>
+                        <input id="numberOfPeople" name="numberOfPeople" class="booking-input" type="number" min="1" placeholder="1" />
+                    </div>
+                    <div class="booking-field">
+                        <label for="totalPrice">Tổng tiền (VNĐ)</label>
+                        <input id="totalPrice" name="totalPrice" class="booking-input" type="number" min="0" step="1000" placeholder="5000000" />
+                    </div>
+                </div>
+
+                <div class="booking-field booking-note">
+                    <label for="note">Ghi chú</label>
+                    <textarea id="note" name="note" class="booking-input" rows="4" placeholder="Ví dụ: Đặt tour cho gia đình"></textarea>
+                </div>
+
+                <div class="booking-status">Trạng thái đơn: <strong>Pending</strong></div>
+                <button type="submit" class="booking-submit">Gửi yêu cầu đặt tour</button>
+            </form>
+        </div>
+    </section>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("navbar-menu");
+            menu.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
