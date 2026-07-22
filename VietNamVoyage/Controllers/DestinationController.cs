@@ -3,14 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using VietNamVoyage.Models;
 
 namespace VietNamVoyage.Controllers
 {
     public class DestinationController : Controller
     {
-        public ActionResult Index()
+        TravelDBEntities db = new TravelDBEntities();
+        public ActionResult Destinations()
         {
-            return View();
+            var list = db.Destinations.ToList();
+            return View(list);
         }
+
     }
 }

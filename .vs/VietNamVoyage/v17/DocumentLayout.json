@@ -1,48 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\C#\\VietNamVoyage\\",
+  "WorkspaceRootPath": "D:\\WorkSpace\\HTML\\VietNamVoyage\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\AppData\\Local\\Temp\\ztwwspcy..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+      "AbsoluteMoniker": "D:0:0:{45DCD71E-2A12-459D-8315-CD4EC27A91DF}|VietNamVoyage\\VietNamVoyage.csproj|D:\\WorkSpace\\HTML\\VietNamVoyage\\vietnamvoyage\\controllers\\destinationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45DCD71E-2A12-459D-8315-CD4EC27A91DF}|VietNamVoyage\\VietNamVoyage.csproj|solutionrelative:vietnamvoyage\\controllers\\destinationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\C#\\VietNamVoyage\\VietNamVoyage\\Views\\Home\\Register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:VietNamVoyage\\Views\\Home\\Register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45DCD71E-2A12-459D-8315-CD4EC27A91DF}|VietNamVoyage\\VietNamVoyage.csproj|D:\\C#\\VietNamVoyage\\vietnamvoyage\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{45DCD71E-2A12-459D-8315-CD4EC27A91DF}|VietNamVoyage\\VietNamVoyage.csproj|d:\\workspace\\html\\vietnamvoyage\\vietnamvoyage\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45DCD71E-2A12-459D-8315-CD4EC27A91DF}|VietNamVoyage\\VietNamVoyage.csproj|solutionrelative:vietnamvoyage\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45DCD71E-2A12-459D-8315-CD4EC27A91DF}|VietNamVoyage\\VietNamVoyage.csproj|D:\\C#\\VietNamVoyage\\vietnamvoyage\\content\\mystyle\\custom-voyage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{45DCD71E-2A12-459D-8315-CD4EC27A91DF}|VietNamVoyage\\VietNamVoyage.csproj|solutionrelative:vietnamvoyage\\content\\mystyle\\custom-voyage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{45DCD71E-2A12-459D-8315-CD4EC27A91DF}|VietNamVoyage\\VietNamVoyage.csproj|d:\\workspace\\html\\vietnamvoyage\\vietnamvoyage\\views\\destination\\destinations.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45DCD71E-2A12-459D-8315-CD4EC27A91DF}|VietNamVoyage\\VietNamVoyage.csproj|solutionrelative:vietnamvoyage\\views\\destination\\destinations.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45DCD71E-2A12-459D-8315-CD4EC27A91DF}|VietNamVoyage\\VietNamVoyage.csproj|D:\\C#\\VietNamVoyage\\vietnamvoyage\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{45DCD71E-2A12-459D-8315-CD4EC27A91DF}|VietNamVoyage\\VietNamVoyage.csproj|solutionrelative:vietnamvoyage\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/./TravelDB/True/SqlTable/dbo.Admin.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45DCD71E-2A12-459D-8315-CD4EC27A91DF}|VietNamVoyage\\VietNamVoyage.csproj|D:\\C#\\VietNamVoyage\\vietnamvoyage\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{45DCD71E-2A12-459D-8315-CD4EC27A91DF}|VietNamVoyage\\VietNamVoyage.csproj|solutionrelative:vietnamvoyage\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45DCD71E-2A12-459D-8315-CD4EC27A91DF}|VietNamVoyage\\VietNamVoyage.csproj|D:\\C#\\VietNamVoyage\\vietnamvoyage\\views\\home\\destinations.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{45DCD71E-2A12-459D-8315-CD4EC27A91DF}|VietNamVoyage\\VietNamVoyage.csproj|solutionrelative:vietnamvoyage\\views\\home\\destinations.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\C#\\VietNamVoyage\\VietNamVoyage\\DB\\SQLQuery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:VietNamVoyage\\DB\\SQLQuery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\C#\\VietNamVoyage\\VietNamVoyage\\Views\\Home\\Login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:VietNamVoyage\\Views\\Home\\Login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\AppData\\Local\\Temp\\ztwwspcy..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\C#\\VietNamVoyage\\VietNamVoyage\\DB\\SQLQuery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:VietNamVoyage\\DB\\SQLQuery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+      "AbsoluteMoniker": "D:0:0:{45DCD71E-2A12-459D-8315-CD4EC27A91DF}|VietNamVoyage\\VietNamVoyage.csproj|D:\\WorkSpace\\HTML\\VietNamVoyage\\vietnamvoyage\\models\\traveldbcontext.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{45DCD71E-2A12-459D-8315-CD4EC27A91DF}|VietNamVoyage\\VietNamVoyage.csproj|solutionrelative:vietnamvoyage\\models\\traveldbcontext.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -52,114 +29,73 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ztwwspcy..sql ",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\AppData\\Local\\Temp\\ztwwspcy..sql",
-              "ToolTip": "ztwwspcy..sql ",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2026-07-16T06:03:30.132Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "D:\\C#\\VietNamVoyage\\VietNamVoyage\\Views\\Home\\Register.cshtml",
-              "RelativeDocumentMoniker": "VietNamVoyage\\Views\\Home\\Register.cshtml",
-              "ToolTip": "D:\\C#\\VietNamVoyage\\VietNamVoyage\\Views\\Home\\Register.cshtml",
-              "RelativeToolTip": "VietNamVoyage\\Views\\Home\\Register.cshtml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-15T03:22:13.087Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\C#\\VietNamVoyage\\VietNamVoyage\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "D:\\WorkSpace\\HTML\\VietNamVoyage\\VietNamVoyage\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "VietNamVoyage\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\C#\\VietNamVoyage\\VietNamVoyage\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\WorkSpace\\HTML\\VietNamVoyage\\VietNamVoyage\\Controllers\\HomeController.cs",
               "RelativeToolTip": "VietNamVoyage\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-15T02:41:49.405Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SQLQuery1.sql ",
-              "DocumentMoniker": "D:\\C#\\VietNamVoyage\\VietNamVoyage\\DB\\SQLQuery1.sql",
-              "RelativeDocumentMoniker": "VietNamVoyage\\DB\\SQLQuery1.sql",
-              "ToolTip": "SQLQuery1.sql ",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2026-07-15T03:03:10.041Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "D:\\C#\\VietNamVoyage\\VietNamVoyage\\Views\\Home\\Login.cshtml",
-              "RelativeDocumentMoniker": "VietNamVoyage\\Views\\Home\\Login.cshtml",
-              "ToolTip": "D:\\C#\\VietNamVoyage\\VietNamVoyage\\Views\\Home\\Login.cshtml",
-              "RelativeToolTip": "VietNamVoyage\\Views\\Home\\Login.cshtml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-15T03:12:05.883Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Contact.cshtml",
-              "DocumentMoniker": "D:\\C#\\VietNamVoyage\\VietNamVoyage\\Views\\Home\\Contact.cshtml",
-              "RelativeDocumentMoniker": "VietNamVoyage\\Views\\Home\\Contact.cshtml",
-              "ToolTip": "D:\\C#\\VietNamVoyage\\VietNamVoyage\\Views\\Home\\Contact.cshtml",
-              "RelativeToolTip": "VietNamVoyage\\Views\\Home\\Contact.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-15T02:47:27.7Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Destinations.cshtml",
-              "DocumentMoniker": "D:\\C#\\VietNamVoyage\\VietNamVoyage\\Views\\Home\\Destinations.cshtml",
-              "RelativeDocumentMoniker": "VietNamVoyage\\Views\\Home\\Destinations.cshtml",
-              "ToolTip": "D:\\C#\\VietNamVoyage\\VietNamVoyage\\Views\\Home\\Destinations.cshtml",
-              "RelativeToolTip": "VietNamVoyage\\Views\\Home\\Destinations.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-15T02:42:01.235Z",
+              "WhenOpened": "2026-07-22T19:23:53.726Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "custom-voyage.css",
-              "DocumentMoniker": "D:\\C#\\VietNamVoyage\\VietNamVoyage\\Content\\myStyle\\custom-voyage.css",
-              "RelativeDocumentMoniker": "VietNamVoyage\\Content\\myStyle\\custom-voyage.css",
-              "ToolTip": "D:\\C#\\VietNamVoyage\\VietNamVoyage\\Content\\myStyle\\custom-voyage.css",
-              "RelativeToolTip": "VietNamVoyage\\Content\\myStyle\\custom-voyage.css",
-              "ViewState": "AgIAAAACAAAAAAAAAAAowBcCAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-07-01T13:54:52.226Z",
-              "EditorCaption": ""
+              "Title": "dbo.Admin.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/./TravelDB/True/SqlTable/dbo.Admin.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/./TravelDB/True/SqlTable/dbo.Admin.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-07-22T19:10:57.169Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\C#\\VietNamVoyage\\VietNamVoyage\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "VietNamVoyage\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\C#\\VietNamVoyage\\VietNamVoyage\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "VietNamVoyage\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
+              "Title": "TravelDbContext.edmx [Diagram1]",
+              "DocumentMoniker": "D:\\WorkSpace\\HTML\\VietNamVoyage\\VietNamVoyage\\models\\TravelDbContext.edmx",
+              "RelativeDocumentMoniker": "VietNamVoyage\\models\\TravelDbContext.edmx",
+              "ToolTip": "D:\\WorkSpace\\HTML\\VietNamVoyage\\VietNamVoyage\\models\\TravelDbContext.edmx [Diagram1]",
+              "RelativeToolTip": "VietNamVoyage\\models\\TravelDbContext.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2026-07-22T19:10:35.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Destinations.cshtml",
+              "DocumentMoniker": "D:\\WorkSpace\\HTML\\VietNamVoyage\\VietNamVoyage\\Views\\Destination\\Destinations.cshtml",
+              "RelativeDocumentMoniker": "VietNamVoyage\\Views\\Destination\\Destinations.cshtml",
+              "ToolTip": "D:\\WorkSpace\\HTML\\VietNamVoyage\\VietNamVoyage\\Views\\Destination\\Destinations.cshtml",
+              "RelativeToolTip": "VietNamVoyage\\Views\\Destination\\Destinations.cshtml",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAwwIUAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-18T13:49:23.106Z",
+              "WhenOpened": "2026-07-22T19:06:48.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DestinationController.cs",
+              "DocumentMoniker": "D:\\WorkSpace\\HTML\\VietNamVoyage\\VietNamVoyage\\Controllers\\DestinationController.cs",
+              "RelativeDocumentMoniker": "VietNamVoyage\\Controllers\\DestinationController.cs",
+              "ToolTip": "D:\\WorkSpace\\HTML\\VietNamVoyage\\VietNamVoyage\\Controllers\\DestinationController.cs",
+              "RelativeToolTip": "VietNamVoyage\\Controllers\\DestinationController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-22T19:01:21.866Z",
               "EditorCaption": ""
             }
           ]
